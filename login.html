@@ -67,19 +67,19 @@ span.psw {
 
 <h2>Login Form</h2>
 
-<form action="/action_page.php">
+<form>
   <div class="imgcontainer">
     <img src="img.jpg" alt="Avatar" class="avatar">
   </div>
 
   <div class="container">
     <label><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <input type="text" placeholder="Enter Username" name="uname">
 
     <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" name="psw">
         
-    <button type="submit">Login</button>
+    <button type="submit" onclick="return validate()">Login</button>
     <input type="checkbox" checked="checked"> Remember me
   </div>
 
@@ -88,6 +88,6 @@ span.psw {
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
-
+<script type="text/javascript" src="validate.js"></script>
 </body>
 </html>
