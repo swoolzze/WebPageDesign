@@ -1,0 +1,189 @@
+<html>
+<head>
+<title>VAMP Tours and Travels</title>
+<link rel="stylesheet" href="style1.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="World's best tours and travels site">
+<meta name="author" content="Akash MAyuresh Puneet Venkat">
+
+</head>
+
+<body>
+<header>
+<div class="container">
+<div id="logo">
+<img src="123.gif" id="img1"></div>
+<div id="logo2">
+<img src="456.png" id="img2">
+</div>
+<nav>
+<ul>
+<li>Post Booking Info</li>
+<li>Android App</li>
+<li>Gift Holiday</li>
+<li>Contact Us</li>
+<li><a href="login.html">LOGIN</a></li>
+<li><a href="Signup.html">SIGN UP</a></li>
+</ul>
+</nav>
+<div id="notice">
+<input type="button"  value="Tours At a Glance" style="height:30px;width:150px;" size="55">
+<input type="text" name="search" placeholder="Find your Destination....">
+
+</div>
+</div>
+</header>
+
+<div class="dropdown">
+  <button class="dropbtn"> Group Tours</button>
+  <div class="dropdown-content">
+    <a href="america.html">America</a>
+    <a href="japan.html">Japan</a>
+    <a href="new-zealand.html">New-Zealand</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn">Speciality Tours</button>
+  <div class="dropdown-content">
+    <a href="#">Second Innings</a>
+    <a href="#">Student Special</a>
+    <a href="#">Marigold</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn">Economy Tours</button>
+  
+</div>
+<div class="dropdown">
+  <button class="dropbtn">Corporate Travel</button>
+  <div class="dropdown-content">
+    <a href="#">MICSE Tourism</a>
+    <a href="#">MICE Itineraries</a>
+    <a href="#">Careers</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn">About us</button>
+  <a href="about.html"></a>
+</div>
+<div class="dropdown">
+  <button class="dropbtn">More</button>
+<div class="dropdown-content">
+    <a href="#">Forex and Insurance</a>
+    <a href="#">FAQS</a>
+    <a href="#">Guest Helpline</a>
+  </div>
+</div>
+
+
+
+
+<section id="showcase">
+ <div class="container">
+    <div class="slide">
+        <img class="mySlides" src="c.jpg" >
+        <img class="mySlides" src="d.jpg" >
+        <img class="mySlides" src="kr.jpg" >
+        <img class="mySlides" src="k.jpg">
+		<img class="mySlides" src="e.jpg" >
+		
+     </div>
+    <div class="slide1">
+	   <img class="mySlides1" src="i.jpg" >
+       <img class="mySlides1" src="m.jpg" >
+       <img class="mySlides1" src="t.jpg" >
+       <img class="mySlides1" src="l.jpg" >
+     </div>
+    </div>
+</div>
+</section>
+
+<section id="week">
+<div class="container">
+<center><p>Best Deals of the week</p></center>
+<hr>
+  <div class="box">
+      <a href="america.html"> <img src="tm1.jpg" class="ads"></a>
+	 <p> Wonders of America|5Days|4Nights
+	  <ul>
+	  <li>Royal Buckingham Palace, </li> <li>Fastest Eurostar, </li>
+	  <li>Statue of Liberty</li> <li>Impressive Champs Elysees,  </li>
+	  <li>Entertaining Disneyland,</li><li>Splendid </li>
+	  </ul></p>
+	  <span class="server">You Save Rs.25000</span>
+  </div>
+  <div class="box">
+      <a href="japan.html"> <img src="j1.jpg" class="ads"></a>
+	<p>  Japan|6Days|7Nights
+	  <ul>
+	  <li>Mount Fuji,</li>
+	  <li>meiji Shrine ,</li>
+	  <li>Hiroshima Peace mermorial,</li> <li>Sacred Hidimba temple,</li>
+	  <li>Ueno Park</li>
+	  </ul></p>
+	   <span class="server">You Save 6500</span>
+  </div>
+  <div class="box">
+    <a href="new-zealand.html">  <img src="nz1.jpg" class="ads"></a>
+	 
+	<p>New-Zealand|7Days |6Nights
+	  <ul>
+	   <li>Taupo Lake</li>
+	  <li>Mesmerizing Couty Lake,</li> <li>Majestic Doddabetta Peak, </li>
+	  <li>Silver Cascade Fall </li>
+	  </ul>
+	  </p>
+	   <span class="server">You Save 5000</span>
+  </div>
+   </div>
+</section>
+ <section class="container">
+<center>
+  <img src="down.jpg"></img></center>
+</section>
+
+<footer id="foot">
+<p> Vamp Tours & Travels,copyright &copy; 2017</p>
+</footer>
+      <script>
+        var myIndex = 0;
+          carousel();
+
+     function carousel() {
+        var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++)
+		  {
+                 x[i].style.display = "none";  
+          } 
+        myIndex++;
+       if (myIndex > x.length)
+	      {
+	        myIndex = 1;
+	      }    
+       x[myIndex-1].style.display = "block";  
+       setTimeout(carousel, 3000); // Change image every 2 seconds
+    };
+	    var myIndex1= 0;
+	  carousel1();
+	   function carousel1() {
+        var i;
+          var x = document.getElementsByClassName("mySlides1");
+          for (i = 0; i < x.length; i++)
+		  {
+                 x[i].style.display = "none";  
+          } 
+        myIndex1++;
+       if (myIndex1 > x.length)
+	      {
+	        myIndex1 = 1;
+	      }    
+       x[myIndex1-1].style.display = "block";  
+       setTimeout(carousel1, 2000); // Change image every 2 seconds
+    }
+	
+</script>
+
+</body>
+</html>
